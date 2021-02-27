@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Creative Project 2</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="opening">
+        <h1>Creative Project 2: Calendar</h1>
+        <p class="intro-message">Have you ever wondered what holidays are celebrated in different nations around the world? Now you can see what holidays were celebrated in any country in the past or will be celebrated in the near future. Input the country and year you would like to learn about and enjoy!</p>
+        <form>
+            <label class="prompt">Enter a country:</label>
+            <input id="calendarInput" type="text">
+            <br />
+            <label class="prompt">Enter a year:</label>
+            <input id="yearInput" type="text"><br /><br />
+            <input id="calendarSubmit" type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="errorResult"></div>
+    <div id="holidayResults"></div>
+    <div id="countryResults"></div>
+    <div id="languageResults"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/script.js">
+    </script>
+
+</body>
+</html>
+
+<footer>
+    <div class="divider"></div>
+    <hr />
+    <a href="https://github.com/scmeyer23/Calendar" target="_blank">GitHub Repo</a>
+</footer>

@@ -1,0 +1,137 @@
+* {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+.opening {
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+
+.holiday-list {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.native {
+    color: darkorange;
+}
+
+#holidayResults:not(:empty) {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    background-color: antiquewhite;
+    border: solid;
+    border-color: grey;
+}
+
+.months h2 {
+    display: block;
+    text-decoration: underline;
+}
+
+.break {
+    background-color: orange;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 10px;
+}
+
+.intro-message {
+    font-style: italic;
+    font-size: x-large;
+}
+
+#errorResult {
+    margin-left: 2.5%;
+    margin-top: 1%;
+}
+
+.prompt {
+    display: block;
+    font-size: large;
+}
+
+.location {
+    margin-top: 20px;
+    text-align: center;
+    border: double;
+    border-color: black;
+    padding: 8px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+
+.country-output {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    background-color: antiquewhite;
+    border: solid;
+    border-color: grey;
+}
+
+.country-list {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.individual-country {
+    border-top: dotted;
+}
+
+.languages {
+    display: grid;
+    grid-template: auto auto auto auto auto auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 1.25%;
+}
+
+
+@media (max-width: 1200px) {
+    .intro-message {
+        font-size: large;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    .country-list {
+        grid-template: auto auto auto / 1fr 1fr 1fr;
+    }
+
+    .languages {
+        grid-template: auto auto auto auto / 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .holiday-list {
+        grid-template: auto / 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .country-list {
+        grid-template: auto / 1fr;
+    }
+
+    .languages {
+        grid-template: auto auto / 1fr 1fr;
+    }
+}
